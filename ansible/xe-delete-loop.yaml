@@ -1,0 +1,14 @@
+#RSTForum- config in ansible
+---
+- name: RSTForum- Config for Ansible
+  hosts: IOS
+  gather_facts: no
+
+  tasks:
+
+  - name: RSTForum- Delete loopback 10
+    ios_interface:
+      name: Loopback10
+      state: absent
+
+
