@@ -1,0 +1,35 @@
+#RSTForum:- config in ansible
+---
+- name: RSTForum- Sample show version for Ansible
+  hosts: IOS
+  gather_facts: no
+
+  tasks:
+
+  - name: RSTForum- GATHERING FACTS
+    ios_facts:
+      gather_subset: hardware
+
+  - name: RSTForum- Display current IOS version
+    debug:
+      var: ansible_net_version
+
+  - name: RSTForum- Run show ip int brie
+    ios_command:
+      commands: show ip interface brief
+    register: RSTForum_int
+
+  - name: RSTForum- Display value of "RSTForum_int" variable
+    debug:
+      var: RSTForum_int["stdout_lines"][0]
+
+## Lab 1
+  - name: RSTForum- run show users
+    ios_command:
+      commands: show users
+    register: RSTForum_shuser
+
+  - name: RSTForum- Display value of "RSTForum_shuser" variable
+    debug:
+      var: RSTForum_shuser["stdout_lines"][0]
+

@@ -1,0 +1,14 @@
+#RSTForum- config in ansible
+---
+- name: RSTForum- NTP config for Ansible
+  hosts: IOS
+  gather_facts: no
+
+  tasks:
+
+  - name: RSTForum- Set ntp server 100.100.100.200 via CLI
+    ios_config:
+      lines:
+        - ntp server 100.100.100.200
+
+
