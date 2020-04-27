@@ -1,0 +1,77 @@
+====================================================================================================
+## Create SSH Session with Router using following Command ##
+====================================================================================================
+
+ssh cisco@10.0.0.1 -p 830 netconf
+
+====================================================================================================
+#say Hello
+====================================================================================================
+
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <capabilities>
+        <capability>urn:ietf:params:netconf:base:1.0</capability>
+    </capabilities>
+</hello>]]>]]>
+
+====================================================================================================
+Get Interface details
+====================================================================================================
+
+#say Hello Script
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <capabilities>
+        <capability>urn:ietf:params:netconf:base:1.0</capability>
+    </capabilities>
+</hello>]]>]]>
+
+#get interface details Script
+<?xml version="1.0"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0"xmlns:cpi="http://www.cisco.com/cpi_10/schema"
+message-id="101">
+   <get-config>
+        <source>
+             <running/>
+         </source>
+        <filter>
+          <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+          <interface>
+          <name/>
+          <description/>
+          <ipv4 xmlns="urn:ietf:params:xml:ns:yang:ietf-ip">
+            <address/>
+          </ipv4>
+          <enabled/>
+          </interface>
+          </interfaces>
+    </filter>
+   </get-config>
+</rpc>
+
+=====================================================================================================
+Get entire running config - say hello every time you make a new request
+=====================================================================================================
+
+#say Hello Script
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <capabilities>
+        <capability>urn:ietf:params:netconf:base:1.0</capability>
+    </capabilities>
+</hello>]]>]]>
+
+#get entire running config Script
+<?xml version="1.0"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0"xmlns:cpi="http://www.cisco.com/cpi_10/schema"
+message-id="101">
+   <get-config>
+        <source>
+             <running/>
+         </source>
+   </get-config>
+</rpc>
+
+=======================================================================================================
+

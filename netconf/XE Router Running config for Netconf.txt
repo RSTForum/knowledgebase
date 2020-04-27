@@ -1,0 +1,30 @@
+hostname RST
+!
+username cisco privilege 15 secret cisco
+!
+ip domain name rstforum.net
+!
+crypto key generate rsa general-keys modulus 1024
+!
+interface GigabitEthernet1
+ description MANAGEMENT INTERFACE
+ ip address 10.0.0.1 255.255.255.0
+!
+ip http server
+ip http authentication local
+ip http secure-server
+!
+ip ssh version 2
+ip scp server enable
+!
+line con 0
+ exec-timeout 0 0
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+!
+netconf-yang
+restconf
+end
+
