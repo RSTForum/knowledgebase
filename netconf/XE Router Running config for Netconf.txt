@@ -25,6 +25,7 @@ line vty 0 4
  transport input ssh
 !
 netconf-yang
+no netconf-yang feature candidate-datastore
 restconf
 end
 
