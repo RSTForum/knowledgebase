@@ -1,0 +1,36 @@
+======================================================================================================================================
+The following is a sample RESTCONF request to router to check the allowed methods available for restconf configurations
+======================================================================================================================================
+
+curl -i -k -X "OPTIONS" "https://10.0.0.1:443/restconf/data/Cisco-IOS-XE-native:native/logging/monitor/severity" -H 'Accept: application/yang-data+json' -u 'cisco:cisco'
+
+======================================================================================================================================
+The following is a sample RESTCONF request to get primary ip address details of configured GigabitEthernet interfaces.
+======================================================================================================================================
+
+curl -i -k -X "GET" "https://10.0.0.1:443/restconf/data/Cisco-IOS-XE-native:native/interface?fields=GigabitEthernet/ip/address/primary;name" -H 'Accept: application/yang-data+json' -u 'cisco:cisco'
+
+======================================================================================================================================
+The following is a sample RESTCONF request to get ip address details of interface GigabitEthernet 2.
+======================================================================================================================================
+
+curl -i -k -X "GET" "https://10.0.0.1:443/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet=2/ip" -H 'Accept: application/yang-data+json' -u 'cisco:cisco'
+
+======================================================================================================================================
+The following is a sample RESTCONF request to get primary ip address of interface GigabitEthernet 1.
+======================================================================================================================================
+
+curl -i -k -X "GET" "https://10.0.0.1:443/restconf/data/Cisco-IOS-XE-native:native/interface/GigabitEthernet=1/ip/address/primary" -H 'Accept: application/yang-data+json' -u 'cisco:cisco'
+
+======================================================================================================================================
+The following is a sample RESTCONF request to change hostname.
+======================================================================================================================================
+
+curl -i -k -X  PUT https://10.0.0.1/restconf/data/Cisco-IOS-XE-native:native/hostname -H 'Accept: application/yang-data+json' -H 'Content-Type: application/yang-data+json' -H 'cache-control: no-cache' -u 'cisco:cisco' -d '{"hostname": "HelloRST"}'
+    
+======================================================================================================================================
+The following is a sample RESTCONF request to change Loopback ip address
+======================================================================================================================================
+
+curl -i -k -X PATCH https://10.0.0.1/restconf/data/Cisco-IOS-XE-native:native/interface/Loopback=1/ip/address/primary -H 'Accept: application/yang-data+json' -H 'Content-Type: application/yang-data+json' -H 'cache-control: no-cache' -u 'cisco:cisco' -d '{"primary": {"address": "1.1.1.1", "mask": "255.255.255.0"}}'
+======================================================================================================================================

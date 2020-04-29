@@ -1,0 +1,824 @@
+{
+	"info": {
+		"_postman_id": "d056a2ad-bb22-466e-a80a-0f731e456639",
+		"name": "RSTForum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://10.0.0.1/ Root Resource",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://10.0.0.1/.well-known/host-meta",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						".well-known",
+						"host-meta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/API Resource",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/ Get-Module",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/ietf-yang-library:modules-state/module",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-yang-library:modules-state",
+						"module"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/ Capabilities",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/ietf-restconf-monitoring:restconf-state/capabilities",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-restconf-monitoring:restconf-state",
+						"capabilities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/restconf/ Get-Interface-Details",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/ietf-interfaces:interfaces",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-interfaces:interfaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/interfaces options",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/ietf-interfaces:interfaces",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-interfaces:interfaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/interface Header",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "HEAD",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/ietf-interfaces:interfaces",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-interfaces:interfaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/GET-interface=Loopback1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/ietf-interfaces:interfaces/interface=Loopback1",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"ietf-interfaces:interfaces",
+						"interface=Loopback1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/Get-hostname",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/Cisco-IOS-XE-native:native/hostname",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"Cisco-IOS-XE-native:native",
+						"hostname"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/Put-hostname",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"hostname\": \"RSTForum\"}"
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/Cisco-IOS-XE-native:native/hostname",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"Cisco-IOS-XE-native:native",
+						"hostname"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/configure-domain name",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"rstforum.net\"}"
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/Cisco-IOS-XE-native:native/ip/domain",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"Cisco-IOS-XE-native:native",
+						"ip",
+						"domain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/get-domainname",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/Cisco-IOS-XE-native:native/ip/domain",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"Cisco-IOS-XE-native:native",
+						"ip",
+						"domain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/Change Loopback1 ip address",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"primary\": {\"address\": \"88.88.88.88\", \"mask\": \"255.255.255.0\"}}"
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/Cisco-IOS-XE-native:native/interface/Loopback=1/ip/address/primary",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"Cisco-IOS-XE-native:native",
+						"interface",
+						"Loopback=1",
+						"ip",
+						"address",
+						"primary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/Delete-ip-address",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"primary\": {\"address\": \"88.88.88.88\", \"mask\": \"255.255.255.0\"}}"
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/Cisco-IOS-XE-native:native/interface/Loopback=1/ip/address/primary",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"Cisco-IOS-XE-native:native",
+						"interface",
+						"Loopback=1",
+						"ip",
+						"address",
+						"primary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://10.0.0.1/PUT-hostname",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cisco",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cisco",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/yang-data+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/yang-data+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"hostname\" : \"HAHAHA\" }"
+				},
+				"url": {
+					"raw": "https://10.0.0.1/restconf/data/Cisco-IOS-XE-native:native/hostname",
+					"protocol": "https",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"restconf",
+						"data",
+						"Cisco-IOS-XE-native:native",
+						"hostname"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
